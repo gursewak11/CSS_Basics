@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyframes</title>
+    <style>
+      body {
+        background: #333333;
+      }
+      .box {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+
+        /*
+        animation-name: animate1;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;  <-- Animate and stay at end of the animation -->
+        animation-delay: 2s;
+        <-- animation-direction: alternate-reverse; Reverse animation -->
+        animation-direction: alternate;
+        animation-timing-function: ease-in;  <-- Change speed of animation -->
+        */
+        /* name | duration | fill-mode | delay | timing-function */
+        animation: animate1 2s forwards 1s ease-in-out;
+      }
+
+      @keyframes animate1 {
+        /*
+        from {
+          width: 200px;
+        }
+        */
+        from {
+          top: 0;
+        }
+        to {
+          width: 600px;
+          background: red;
+          top: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

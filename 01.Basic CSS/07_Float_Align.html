@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and Align</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4rem;
+      }
+      .container {
+        max-width: 960px;
+        margin: 30px auto;
+      }
+      .box {
+        background: lightgray;
+        border: 2px #333 solid;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+      .box p {
+        text-align: center;
+        text-align: justify;
+      }
+
+      #box-2 {
+        float: left;
+        width: 68%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Heading One</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+          tempora distinctio fugit voluptas eveniet ducimus explicabo ea
+          voluptates suscipit animi?
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h3>Heading Two</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+          tempora distinctio fugit voluptas eveniet ducimus explicabo ea
+          voluptates suscipit animi?
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h3>Heading Three</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+          tempora distinctio fugit voluptas eveniet ducimus explicabo ea
+          voluptates suscipit animi?
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">
+        <h3>Heading Four</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+          tempora distinctio fugit voluptas eveniet ducimus explicabo ea
+          voluptates suscipit animi?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
